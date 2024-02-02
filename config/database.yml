@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  adapter: postgresql
+  database: sadaram_8
+  username: postgres
+  password: rails
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  adapter: postgresql
+  database: sadaram_test
+  username: postgres  
+  password: rails   
+  host: localhost
+  port: 5432
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

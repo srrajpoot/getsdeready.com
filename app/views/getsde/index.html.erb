@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%# <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> %>
+    <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+    <title>Get SDE Ready</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/8PytfQ5h/new.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-q6jH6EiDEzPdLgC3r+L4ZHc5lv0WoUqWLMwQu5YEoIstlH9bGCV/EqFf/t9PAanQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFVnR9P2Ll5DZ9e5YdRbAlBdEf8lONqcz" crossorigin="anonymous"
+
+<%# <%= stylesheet_link_tag 'style', media: 'all' %> %>
+
+  <%= stylesheet_link_tag 'style' %>
+
+
+
+
+
+
+
+
+    <script>
+        !function(e, n, o) {
+            n.BrevoConversationsID = "650e59bfb5345c23a5471e5d",
+            n[o] = n[o] || function() {
+                (n[o].q = n[o].q || []).push(arguments)
+            }
+            ;
+            var s = e.createElement("script");
+            s.async = !0,
+            s.src = "https://conversations-widget.brevo.com/brevo-conversations.js",
+            e.head && e.head.appendChild(s)
+        }(document, window, "BrevoConversations")
+    </script>
+  
+   
+    <section class="Header_promotionHeaderContainer__vdz2G">
+      <div class="Header_promotionHeaderText__oPdc0" style="color: #212529; font-size: var(--font-size-md)">
+        Next batch starting from 3rd February, 2024.
+        <div class="text-center"> Avail <span class="fw-7" style="color: #212529;"><b> 60% off</b></span> now!</div>
+      </div>
+      <div class="d-flex gap-2 align-items-center mx-5" id="countdown">
+        <!-- Countdown Timer will be inserted here using JavaScript -->
+      </div>
+      <div class="position-absolute float-right end-0 mx-2">
+        <button id="closeButton" class="Button_button__Rzx8I">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <%# <script src="script.js"></script> %>
+
+  </head>
+<body>
+
+    <header class="header">
+      <a href="/"><img id="logo-img" src="https://i.postimg.cc/8PytfQ5h/new.png" alt="" class="img-fluid" width="70px"></a><nav id="navbar" class="navbar order-last order-lg-0 navbar-mobile-hide">
+        <div class="navebar">
+            <nav class="flex-container"> 
+                <ul>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="/">Home</a></li>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="#courses" to="#courses">Courses</a></li>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="#instructors" to="#instructors">Instructors</a></li>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="#contact" to="#contact">Request Callback</a></li>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="/jobs">Jobs</a></li>
+                    <li><a class="nav-link scrollto active text-dark" style="color: black;" href="/podcast">Podcast</a></li><a class="nav-link"><li><div class="btns mt-0"><button class="btn-menu animated fadeInUp scrollto d-flex align-items-center justify-content-center gap-1 Auth_signInBtn__c6-Bj false" style="background-color: #034682; padding-left: 20px; padding-right: 20px;"><p   style="color: white;">Login | Signup </p><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" class="Auth_arrowRight__E4Gci" width="5px" xmlns="http://www.w3.org/2000/svg"><path d="M8.586 5.586c-.781.781-.781 2.047 0 2.828l3.585 3.586-3.585 3.586c-.781.781-.781 2.047 0 2.828.39.391.902.586 1.414.586s1.024-.195 1.414-.586l6.415-6.414-6.415-6.414c-.78-.781-2.048-.781-2.828 0z"></path></svg></button></div></li></a>
+                </ul><i class="mobile-nav-toggle bi bi-list" id="hamb"></i>
+            </nav></div>
+    </header>
+
+
+    
+        <section id="hero" class="d-flex align-items-center" >
+            <div class="container position-relative text-center text-lg-start" >
+                <div class="row sde-ready">
+                    <div class="col-lg-8 sada"><h1>
+                        <span style="color: black; text-shadow: white 2px 0px; font-size: 40px;">Get SDE Ready</span></h1><br><h2 style="font-weight: bold;"><strong"><p style="color: rgba(59, 57, 57, 0.815) ;">Empowering Future Innovators</p><p style="color: rgba(129, 122, 122, 0.61);">Your Pathway to Software Development Excellence</p></h2><br>
+                        <div class="btns mt-0 mb-5" style="cursor: pointer;background-color: black;justify-items: center; width: 180px; height: 40px;"><a href="#courses" class="btn-menu animated fadeInUp scrollto btn-dark;"><p style="background-color:black;color: white;margin-left: 15px;">Explore our courses</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                                      <!-- Course -->
+
+
+        <div class="course">Course</div>
+        <div class="shop-section">
+            <div class="box1 box">
+                <div class="box-content">
+                    <%# <div class="box-img" style="background-image: url('dsa.png');"></div> %>
+                    <div class="box-img" style="background-image: url('<%= asset_path('dsa.png') %>');"></div>
+
+
+                    <div class="card-body flex flex-column justify-content-between"><div class="Home_courseImage__WfMzP" style="background-image: url('<%= asset_path('dsa.png') %>');">
+</div><div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Intern</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Students</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">SDE-1/2/3</span></div><div class="my-2"><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star"></i> 4.4</div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;65+ Live Classes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;40+ Quizzes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;400+ Question Solved&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Live Doubt Support&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Interview Question Covered&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Lifetime Access&nbsp;</span></div><div class="course-price" style="padding: 0px; margin-top: 30px;"><span class="d-flex flex-column"><span class="off-text mx-2 fw-6 position-relative start-0 " style="color: blue;">60% OFF</span><span class="new-price fw-8 mx-2"><span class="Home_actual__18qzZ" style="color: grey; margin: 10px;">₹10,000</span>₹4,000</span></span></div><div class="Home_course_button__czKo1"><button type="button" colorscheme="blue" class="Button_button__Rzx8I sc-imWYAI jgFDwn btn btn-outline-primary rounded btn-sm"><span>Know more </span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></button></div></div>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box-content">                        
+                    <div class="box-img" style="background-image: url('<%= asset_path('mern.png') %>');"></div>
+                    <div class="card-body flex flex-column justify-content-between"><div class="Home_courseImage__WfMzP" style="background-image: url('<%= asset_path('dsa.png') %>');">
+</div><div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Intern</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Students</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">SDE-1/2/3</span></div><div class="my-2"><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star"></i> 4.4</div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;65+ Live Classes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;40+ Quizzes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;400+ Question Solved&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Live Doubt Support&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Interview Question Covered&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Lifetime Access&nbsp;</span></div><div class="course-price" style="padding: 0px; margin-top: 30px;"><span class="d-flex flex-column"><span class="off-text mx-2 fw-6 position-relative start-0 " style="color: blue;">60% OFF</span><span class="new-price fw-8 mx-2"><span class="Home_actual__18qzZ" style="color: grey; margin: 10px;">₹10,000</span>₹4,000</span></span></div><div class="Home_course_button__czKo1"><button type="button" colorscheme="blue" class="Button_button__Rzx8I sc-imWYAI jgFDwn btn btn-outline-primary rounded btn-sm"><span>Know more </span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></button></div></div>
+                </div>
+            </div>
+            <div class="box3 box">
+                <div class="box-content">       
+                    <div class="box-img" style="background-image: url('<%= asset_path('all-courses.png') %>');"></div>
+                    <div class="card-body flex flex-column justify-content-between"><div class="Home_courseImage__WfMzP" style="background-image: url('<%= asset_path('dsa.png') %>');">
+;"></div><div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Intern</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Students</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">SDE-1/2/3</span></div><div class="my-2"><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star"></i> 4.4</div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;65+ Live Classes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;40+ Quizzes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;400+ Question Solved&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Live Doubt Support&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Interview Question Covered&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Lifetime Access&nbsp;</span></div><div class="course-price" style="padding: 0px; margin-top: 30px;"><span class="d-flex flex-column"><span class="off-text mx-2 fw-6 position-relative start-0 " style="color: blue;">60% OFF</span><span class="new-price fw-8 mx-2"><span class="Home_actual__18qzZ" style="color: grey; margin: 10px;">₹10,000</span>₹4,000</span></span></div><div class="Home_course_button__czKo1"><button type="button" colorscheme="blue" class="Button_button__Rzx8I sc-imWYAI jgFDwn btn btn-outline-primary rounded btn-sm"><span>Know more </span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></button></div></div>
+                </div>
+            </div>
+            <div class="box4 box">         
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('<%= asset_path('sope.jpeg') %>');"></div>
+                    <div class="card-body flex flex-column justify-content-between"><div class="Home_courseImage__WfMzP" style="background-image: url('<%= asset_path('dsa.png') %>');">
+;"></div><div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Intern</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">Students</span><span class="badge me-2" style="background-color: rgb(127, 199, 217);">SDE-1/2/3</span></div><div class="my-2"><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star-fill"></i><i class="bi text-warning bi-star"></i> 4.4</div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;65+ Live Classes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;40+ Quizzes&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;400+ Question Solved&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Live Doubt Support&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Interview Question Covered&nbsp;</span></div><div class="card-text" style="padding: 4px; font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, Noto&nbsp;Color&nbsp;Emoji;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;Lifetime Access&nbsp;</span></div><div class="course-price" style="padding: 0px; margin-top: 30px;"><span class="d-flex flex-column"><span class="off-text mx-2 fw-6 position-relative start-0 " style="color: blue;">60% OFF</span><span class="new-price fw-8 mx-2"><span class="Home_actual__18qzZ" style="color: grey; margin: 10px;">₹10,000</span>₹4,000</span></span></div><div class="Home_course_button__czKo1"><button type="button" colorscheme="blue" class="Button_button__Rzx8I sc-imWYAI jgFDwn btn btn-outline-primary rounded btn-sm"><span>Know more </span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></button></div></div>
+                </div>
+            </div>
+        </div>
+
+
+
+                         <!-- Advantages Of Joining Us -->
+
+        <div class="massage">
+            <h1>Advantages Of Joining Us</h1>
+        </div>
+
+
+
+            <div class="advantages">
+
+                <div class="row">
+                    <div class="column">
+                      <div class="card1">
+                        <svg class= "card-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M16 4C16.5523 4 17 4.44772 17 5V9.2L22.2133 5.55071C22.4395 5.39235 22.7513 5.44737 22.9096 5.6736C22.9684 5.75764 23 5.85774 23 5.96033V18.0397C23 18.3158 22.7761 18.5397 22.5 18.5397C22.3974 18.5397 22.2973 18.5081 22.2133 18.4493L17 14.8V19C17 19.5523 16.5523 20 16 20H2C1.44772 20 1 19.5523 1 19V5C1 4.44772 1.44772 4 2 4H16ZM7.4 8.82867C7.2067 8.82867 7.04543 8.96578 7.00813 9.14806L7 9.22867V14.7713C7 14.8474 7.02169 14.9219 7.06254 14.9861C7.16631 15.1492 7.36858 15.2116 7.54238 15.1452L7.61475 15.1088L11.9697 12.3375C12.0191 12.306 12.061 12.2641 12.0924 12.2148C12.1962 12.0517 12.1671 11.842 12.0333 11.7127L11.9697 11.6625L7.61475 8.8912C7.55057 8.85036 7.47607 8.82867 7.4 8.82867Z"></path></svg>
+                        <p>Connect with Peer Group</p>
+                      </div>
+                    </div>
+
+                    <div class="column">
+                      <div class="card2">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>                        <p>1:1 mentorship</p>
+                        </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="column">
+                      <div class="card3">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.27 12h3.46a1.5 1.5 0 001.48-1.75l-.3-1.79a2.951 2.951 0 00-5.82.01l-.3 1.79c-.15.91.55 1.74 1.48 1.74zM1.66 11.11c-.13.26-.18.57-.1.88.16.69.76 1.03 1.53 1h1.95c.83 0 1.51-.58 1.51-1.29 0-.14-.03-.27-.07-.4-.01-.03-.01-.05.01-.08.09-.16.14-.34.14-.53 0-.31-.14-.6-.36-.82-.03-.03-.03-.06-.02-.1.07-.2.07-.43.01-.65a1.12 1.12 0 00-.99-.74.09.09 0 01-.07-.03C5.03 8.14 4.72 8 4.37 8c-.3 0-.57.1-.75.26-.03.03-.06.03-.09.02a1.24 1.24 0 00-1.7 1.03c0 .02-.01.04-.03.06-.29.26-.46.65-.41 1.05.03.22.12.43.25.6.03.02.03.06.02.09zM16.24 13.65c-1.17-.52-2.61-.9-4.24-.9-1.63 0-3.07.39-4.24.9A2.988 2.988 0 006 16.39V18h12v-1.61c0-1.18-.68-2.26-1.76-2.74zM1.22 14.58A2.01 2.01 0 000 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58zM22.78 14.58A6.95 6.95 0 0020 14c-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57c0-.81-.48-1.53-1.22-1.85zM22 11v-.5c0-1.1-.9-2-2-2h-2c-.42 0-.65.48-.39.81l.7.63c-.19.31-.31.67-.31 1.06 0 1.1.9 2 2 2s2-.9 2-2z"></path></svg>                        <p>Connect with Peer Group</p>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card4">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M152,96V80h-8a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h8V160a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16v48a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V192h-8a32,32,0,0,1-32-32V136H80v8a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V112A16,16,0,0,1,32,96H64a16,16,0,0,1,16,16v8h32V96a32,32,0,0,1,32-32h8V48a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16V96a16,16,0,0,1-16,16H168A16,16,0,0,1,152,96Z"></path></svg>                        <p>Structured Curriculum</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card5">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z"></path></svg>                        <p>Live classes by Instructors</p>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card6">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"></path></svg>              
+                        <p>Live doubt support</p>
+
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column">
+                      <div class="card7">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M9 1h6v2H9zM19.03 7.39l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42A8.962 8.962 0 0012 4a9 9 0 00-9 9c0 4.97 4.02 9 9 9a8.994 8.994 0 007.03-14.61zM13 14h-2V8h2v6z"></path></svg>                     
+                        <p>Flexible</p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                          <div class="card8">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"></path></svg>                         
+                           <p>Cash prize in every class/p>
+                          </div>
+                        </div>
+            </div>
+
+            <div class="massg">
+                <h1>Leading Companies Behind Top-notch Instructors</h1>
+            </div>
+
+            <div class="companes">
+                <%# <img src="company.png" alt="companes"> %>
+                <img src="<%= asset_path('company.png') %>" alt="companies">
+
+            </div>
+
+            <div class="questions"><h1>Frequently Asked Questions</h1></div>
+
+
+            <!-- /**  Qustion list **/ -->
+
+
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>Who should join this course?</summary>
+              <p class="para">Our courses are intended for anyone aspiring to become a Software Development Engineer. This includes university students who have very basic programming knowledge (2nd year or above), working professionals looking for a career switch till SDE-2, and anyone interested in the field of software development.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>Is the amount refundable if I don't like the course?</summary>
+              <p class="para">This course offers a no-questions-asked, full refund policy effective within seven days of its registration.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>What is the mode of the course, online or offline?</summary>
+              <p class="para">Every single topic will be covered through live online classes, scheduled to take place 5 days a week.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>What if I miss a class?</summary>
+              <p class="para">Every class will be recorded and individuals will have life-time access to these recordings.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>Are there any prerequisites?</summary>
+              <p class="para">Only basic programming knowledge is required.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>Will there be doubt classes?</summary>
+              <p class="para">Yes, there will be regular doubt classes. Students will be informed in advance for these.</p>
+            </details>
+            <details>
+              <summary><i class="fa-regular fa-circle-question"></i>What is the duration of the course?</summary>
+              <p class="para">The course's duration is expected to span between three to four months, though it can be extended if there is a need for additional classes focused on specific topics or further doubt sessions.
+                Students who opt the Fast-Track To Full Spectrum Software Engineering course, will have an additional two months of classes for the Full-stack web development part.</p>
+            </details>
+
+          <!--   -->
+
+          <div class="course-massage"><h1>Course Instructors</h1></div>
+
+            <div id="container">
+              <div id="slider-container">
+                <span onclick="slideRight()" class="btn"></span>
+                  <div id="slider">
+                    <div class="slide"><span>     
+                        <%# <img src="arun.jpeg" alt="5 Terre" style="width:100%"> %>
+                        <img src="<%= asset_path('arun.jpeg') %>" alt="5 Terre" style="width:100%">
+
+                        <div class="container">
+                        <p> <div class="card-body"><h5 class="card-title">Arpan Garg <a href="https://www.linkedin.com/in/arpansac/" target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--primary)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: var(--primary);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></h5><p class="card-text instructor-card-description" style="color: white;">Founder, Commudle | Ex-Instructor &amp; Founding Member</p></div></p>
+                        </div>
+                    </span></div>
+                    <div class="slide"><span>
+                      <%# <img src="getsde/app/assets/images/arpan.jpeg" alt="5 Terre" style="width:100%"> %>
+
+                      <%# <img src="<%=getsde('arpan.jpeg')" alt="5 Terre" style="width:100%"> %> 
+                      <img src="<%= asset_path('arpan.jpeg') %>" alt="5 Terre" style="width:100%">
+
+                      <div class="container">
+                      <p><div class="instructor-card h-100"><div class="card-body"><h5 class="card-title">Arpan Garg <a href="https://www.linkedin.com/in/arpansac/" target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--primary)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: var(--primary);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></h5><p class="card-text instructor-card-description" style="color: white;">Founder, Commudle | Ex-Instructor &amp; Founding Member</p></div></div></p>
+                      </div>
+                    </span></div>
+                    <div class="slide"><span>
+                                            <%# <img src="vinamer.jpeg" alt="5 Terre" style="width:100%"> %>
+                        <img src="<%= asset_path('vinamer.jpeg') %>" alt="5 Terre" style="width:100%">
+
+                        <div class="container">
+                        <p><div class="instructor-card h-100"><div class="card-body"><h5 class="card-title">Vinamer Goel <a href="https://www.linkedin.com/in/vinamer-goel/" target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--primary)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: var(--primary);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></h5><p class="card-text instructor-card-description" style="color:white;">SDE2 at Amazon | Ex OLX | Mentor at Scaler Academy</p></div></div></p>
+                        </div>
+                    <span></div>
+                    <div class="slide"><span>
+                            <%# <img src="rajendra.jpeg" alt="5 Terre" style="width:100%"> %>
+                            <img src="<%= asset_path('rajendra.jpeg') %>" alt="5 Terre" style="width:100%">
+
+
+                                <div class="container">
+                                <p><div class="instructor-card h-100"><div class="card-body"><h5 class="card-title">Rajendra Dhami <a href="https://www.linkedin.com/in/rajendra-dhami/" target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--primary)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: var(--primary);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></h5><p class="card-text instructor-card-description" style="color: rgb(250, 247, 247);">SDE2 - Frontend @ Apollo.io</p></div></div></p>
+                                </div>
+                    <span></div>
+                    <div class="slide"><span>
+                                  <%# <img src="kartikeya.png" alt="5 Terre" style="width:100%"> %>
+                                  <img src="<%= asset_path('kartikeya.png') %>" alt="5 Terre" style="width:100%">
+
+                            <div class="container">
+                            <p><div class="instructor-card h-100"><div class="card-body"><h5 class="card-title">Kartikeya Gupta <a href="https://www.linkedin.com/in/kartikeya45/" target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--primary)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: var(--primary);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></h5><p class="card-text instructor-card-description" style="color: white;">ASE @ Lowe's India</p></div></div></p>
+                            </div>
+                    <span></div>
+                  </div>
+                <span onclick="slideLeft()" class="btn"></span>
+              </div>
+          </div>
+        </div>
+
+
+
+
+                  <!-- contect us -->
+
+    <!-- Your Contact Section -->
+    <section id="contact" class="contact" style="background-color: #fff;">
+      <div class="container">
+          <div class="section-title text-center">
+              <center><p style="color: #035399;">Contact Us</p></center>
+              <br>
+          </div>
+          <div class="row1">
+              <!-- Contact Information -->
+              <div class="col-lg-4">
+                  <div class="info">
+                      <div class="address">
+                          <i class="fa-light fa-location-dot"></i>
+                          <h4 style="color: black;">Location:</h4>
+                          <p style="color: black;">B-7, 61-62, Sector-3, Rohini, Delhi-110085</p>
+                      </div>
+                      <div class="open-hours">
+                          <i class="bi bi-clock"></i>
+                          <h4 style="color: black;">Open Hours:</h4>
+                          <p style="color: black;">Every day:<br>09:00 AM - 09:00 PM</p>
+                      </div>
+                      <div class="email">
+                          <i class="bi bi-envelope"></i>
+                          <h4 style="color: black;">Email:</h4>
+                          <p style="color: black;">support@getsdeready.com</p>
+                      </div>
+                      <div class="phone">
+                          <i class="bi bi-phone"></i>
+                          <h4 style="color: black;">Call:</h4>
+                          <p style="color: black;">+91 9891375034</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Contact Form -->
+              <div class="col-lg-5 ">
+                  <form action="https://formspree.io/f/xwkdearj" method="post" class="email-form" id="my-form">
+                      <div class="form-group">
+                          <!-- <label for="name">Your Name</label> -->
+                          <input type="text"placeholder="Your Name"name="name" class="form-control" id="name" required=""
+                              style="color: black;margin-right: 10px;width: 280px;">
+                      <!-- </div> -->
+                      <!-- <div class="form-group"> -->
+                          <!-- <label for="email">Your Email</label> -->
+                          <input type="email"placeholder="Your Email"class="form-control" name="email" id="email" required=""
+                              style="color: black;margin-right: 10px;width: 280px;">
+                      </div>
+                      <div class="form-group">
+                          <!-- <label for="subject">Your Phone No.</label> -->
+                          <input type="text" placeholder="Your Phone No." class="form-control" name="subject" id="subject" required=""
+                              style="color: black;width: 582px;">
+                      </div>
+                      <div class="form-group">
+                          <!-- <label for="message">Type your message here, we generally reply within 10 minutes</label> -->
+                          <textarea class="form-control" placeholder="Type your message here, we generally reply within 10 minutes" name="message" rows="8" required=""
+                              style="color: black;width: 565px;"></textarea>
+                      </div>
+                      <div class="text-center">
+                         <center> <button type="submit" style="width: 200px;font-size: 20px; width: 250px;">Send Message</button></center>
+                      </div>
+                      <p id="my-form-status"></p>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- External Script Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2Xof8EEnVMNl9Q2+d1WzjP4MPdIZNa9KCk4" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFVnR9P2Ll5DZ9e5YdRbAlBdEf8lONqcz"
+      crossorigin="anonymous"></script>
+     
+          
+
+
+              <!-- Foooterrrr -->
+
+        <footer  id="footer" class="footer-container" class="d-flex align-items-center" style="width: 100%; text-overflow: clip;">
+         
+         
+          <div class="container">
+            <div class="copyright">© Copyright <strong><span>Get SDE Ready</span></strong>. All Rights Reserved</div>
+            <div class="hp-links-container-wrapper">
+              <div class="hp-links-section">
+                <h4>Support</h4>
+                <div class="hp-links-container">
+                  <div class="hp-link"><a href="/terms">Terms &amp; Conditions</a></div>
+                  <div class="hp-link"><a href="/privacy">Privacy Policy</a></div>
+                  <div class="hp-link"><a href="/refund">Refund Policy</a></div>
+                </div>
+              </div>
+              <div class="hp-links-section">
+                <h4>Useful Links</h4>
+                <div class="hp-links-container">
+                  <div class="hp-link"><a href="/">Become a Mentor</a></div>
+                  <div class="hp-link"><a href="/">Become an Instructor</a></div>
+                  <div class="hp-link"><a href="/">Become a Campus Ambassador</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100086462083070" target="_blank" class="social-media-link" rel="noreferrer">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-2x" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@getsdeready" target="_blank" class="social-media-link" rel="noreferrer">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-2x" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/getsdeready" target="_blank" class="social-media-link" rel="noreferrer">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-2x" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/getsdeready" target="_blank" class="social-media-link" rel="noreferrer">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-2x" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+        
+
+
+
+  <%= javascript_include_tag 'custom' %>
+
+
+</body>
+</html>
+
